@@ -53,8 +53,8 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 220px;
-  height: 240px;
+  width: 200px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,8 +65,8 @@ h1 {
 
 .flip-container { 
   perspective: 1000;
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   margin: 10px 10px;
   display: inline-block;
 }
