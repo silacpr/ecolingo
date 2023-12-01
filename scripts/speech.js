@@ -1,4 +1,4 @@
-/*var supportMsg = document.getElementById('msg');
+var supportMsg = document.getElementById('msg');
 
 if ('speechSynthesis' in window) {
     //supportMsg.innerHTML = 'Votre navigateur supporte la synthese de parole.';
@@ -18,7 +18,7 @@ button.addEventListener("click", e => {
     console.log(speechMsgInput.value)
     speak(speechMsgInput.value)
 });//speak(speechMsgInput.textContent));
-*/
+
 // Récupère la liste des voix et remplir option
 function loadVoices() {
     
@@ -31,6 +31,7 @@ function loadVoices() {
         option.innerHTML = voice.name;
         // Add the option to the voice selector.
         voiceSelect.appendChild(option);
+        console.log(voice.name)
     });
 }
 loadVoices();
@@ -51,7 +52,7 @@ function speak(text) {
     if (voiceSelect.value) {
         msg.voice = speechSynthesis.getVoices().filter(function(voice)
         { 
-            return voice.name == voiceSelect.value; 
+            return voice.name == "voiceSelect.value"; 
         })[0];
     }
     // Ajouter ce texte (parole) à la liste de synthèse.

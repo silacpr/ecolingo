@@ -6,9 +6,11 @@
     <link rel ="stylesheet" href="style.css"/>
     <title>EcoLingo</title>
 </head>
+
 <body>
+
     <header>
-        <h1>EcoLingo</h1>
+        <h1>ECOLINGO</h1>
         <div class= "container">
             <div class="select">
               <select>
@@ -21,21 +23,27 @@
         
     </header>
 
-
-
-
-<link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'/>
 <div class="flip-container">
   <div class="flipper" id="red">
     <div class="redbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/chien.png" alt="chien"/>
     </div>
     <div class="redbox box box-back">
-      <p class="center box">Camel</p>
-      <button onclick="speak('Camel');"> 
-        ?
-        <img src="">
-      </button>
+      <p>Dog</p>
+      <a onclick="speak('Dog', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -43,10 +51,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="bluebox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/chat.png" alt="chat"/>
     </div>
     <div class="bluebox box box-back">
-      Donkey
+      <p>Cat</p>
+      <a onclick="speak('Cat', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -54,10 +76,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="whitebox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/tortue.png" alt="tortue"/>
     </div>
     <div class="whitebox box box-back">
-      Turtle
+      <p>Turtle</p>
+      <a onclick="speak('Turtle', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -65,10 +101,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="greenbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/poisson.png" alt="poisson"/>
     </div>
     <div class="greenbox box box-back">
-      Ox
+      <p>Fish</p>
+      <a onclick="speak('Fish', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -76,10 +126,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="mgreenbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/lapin.png" alt="lapin"/>
     </div>
     <div class="mgreenbox box box-back">
-      Sheep
+      <p>Rabbit</p>
+      <a onclick="speak('Rabbit', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -87,10 +151,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="darkredbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/vache.png" alt="vache"/>
     </div>
     <div class="darkredbox box box-back">
-      Squirrel
+      <p>Cow</p>
+      <a onclick="speak('Cow', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -98,10 +176,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="darkredbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/écureuil.png" alt="écureuil"/>
     </div>
     <div class="darkredbox box box-back">
-      Walrus
+      <p>Squirrel</p>
+      <a onclick="speak('Squirrel', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -109,10 +201,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="darkredbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/singe.png" alt="singe"/>
     </div>
     <div class="darkredbox box box-back">
-      Jackal
+      <p>Monkey</p>
+      <a onclick="speak('Monkey', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -120,10 +226,24 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="darkredbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/oiseau.png" alt="oiseau"/>
     </div>
     <div class="darkredbox box box-back">
-      Hedgehog
+      <p>Bird</p>
+      <a onclick="speak('Bird', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
@@ -131,14 +251,58 @@
 <div class="flip-container">
   <div class="flipper">
     <div class="darkredbox box box-front">
-      <h1>>> tehBox Front</h1>
+      <img src="images/animaux/cheval.png" alt="cheval"/>
     </div>
     <div class="darkredbox box box-back">
-      Rabbit
+      <p>Horse</p>
+      <a onclick="speak('Horse', 'en', event);" class="bouton_speaker">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <path fill="#231F20" d="M59.998,28.001h-7.999c-2.211,0-4,1.789-4,4s1.789,4,4,4h7.999c2.211,0,4-1.789,4-4 S62.209,28.001,59.998,28.001z"></path>
+                  <path fill="#231F20" d="M49.71,19.466l6.929-4c1.914-1.105,2.57-3.551,1.461-5.465c-1.102-1.914-3.547-2.57-5.46-1.465l-6.93,4 c-1.914,1.105-2.57,3.551-1.461,5.464C45.351,19.915,47.796,20.571,49.71,19.466z"></path>
+                  <path fill="#231F20" d="M56.639,48.535l-6.929-3.999c-1.914-1.105-4.355-0.449-5.461,1.464c-1.105,1.914-0.453,4.359,1.461,5.465 l6.93,4c1.913,1.105,4.358,0.449,5.464-1.465S58.553,49.641,56.639,48.535z"></path>
+                  <path fill="#231F20" d="M37.53,0.307c-1.492-0.625-3.211-0.277-4.359,0.867L18.343,16.001H4c-2.211,0-4,1.789-4,4v24 C0,46.211,1.789,48,4,48h14.343l14.828,14.828C33.937,63.594,34.96,64,35.999,64c0.516,0,1.035-0.098,1.531-0.305 c1.496-0.617,2.469-2.078,2.469-3.695V4.001C39.999,2.384,39.026,0.924,37.53,0.307z"></path>
+              </g>
+          </g>
+      </svg>
+      </a>
     </div>
   </div>
 </div>
 <script>
+
+    var voices = speechSynthesis.getVoices();
+
+    function speak(text, lang, event) {
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = text;
+    console.log("message = " + text);
+
+    // Set les attributsyo
+    msg.volume = parseFloat(0.2);
+    msg.rate = parseFloat(1);
+    msg.pitch = parseFloat(0.7);
+
+    // Trouver la voix en fonction de la langue
+    var voices = window.speechSynthesis.getVoices();
+    var selectedVoice = voices.find(function(voice) {
+        return voice.lang.startsWith(lang);
+    });
+
+    if (selectedVoice) {
+        msg.voice = selectedVoice;
+        window.speechSynthesis.speak(msg);
+        console.log("on est sensé entendre quelque chose");
+    } else {
+        console.log("Voix non trouvée pour la langue spécifiée");
+    }
+
+    event.stopPropagation();
+}
+
 
     var box = document.getElementsByClassName("flipper");
     for (let i = 0; i < box.length; i++) {
@@ -150,7 +314,6 @@
 
 </script>
 
-<script src="./scripts/speech.js"></script>
 
 </body>
 </html>
