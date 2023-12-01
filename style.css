@@ -1,3 +1,157 @@
-body{
-    margin : 0;
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #eff3f7;
+  margin :0;
 }
+
+h1 {
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+
+.mgreenbox {
+  background-color: #669999;
+}
+
+.darkredbox {
+  background-color: #992600;  
+  color: white;  
+}
+
+.darkredbox h1 {
+  border-color: white;
+}
+
+.mgreenbox {
+  background-color: #669999;
+}
+
+.bluebox {
+  background-color: #cce5ff;
+}
+
+.greenbox {
+  background-color: #99cc00;
+}
+
+.redbox {
+  background-color: #F65;
+}
+
+.whitebox {
+  background-color: #fff;
+}
+.box {
+  padding: 10px 30px 10px 30px;
+  border: 1px solid #c9c9c9;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+	left: 0;
+   width: 300px;
+  height: 200px;
+}
+
+.flip-container { 
+  perspective: 1000;
+  width: 360px;
+  height: 220px;
+  margin: 10px 10px;
+  display: inline-block;
+}
+
+.flipper {
+    transform-style: preserve-3d; 
+    position: relative;
+    transition: 0.6s;
+}
+/*
+//.flipper:hover, .flipper:hover{ 
+//  transform: rotateY(180deg);
+//}
+*/
+
+.flipperRotate {
+  transform: rotateY(180deg);
+}
+
+.box-front {
+	z-index: 2;
+	transform: rotateY(0deg);
+  top: 0;
+	left: 0;
+}
+
+.box-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  top: 0;
+	left: 0;
+}
+
+
+header{
+    background-color: rgb(154, 215, 235);
+    margin :0;
+    display: flex;
+    justify-self: space-between;
+    padding : 20px
+ }
+
+header h1 {
+
+    border: 0;
+    vertical-align: middle;
+    font-size: 30px;
+    color : white;
+
+
+}
+
+/* Séléctionner la langue */
+
+.container{
+    margin: auto 0 auto auto;
+}
+
+select {
+    float: right;
+    appearance: none;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    background-image: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 30px;
+    border : 0;
+    font-size: 18px;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+    border : 0;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 10em;
+    height: 3em;
+    overflow: hidden;
+    border : 0;
+  }
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  
+  
+
+  
+

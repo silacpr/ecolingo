@@ -8,8 +8,149 @@
 </head>
 <body>
     <header>
+        <h1>EcoLingo</h1>
+        <div class= "container">
+            <div class="select">
+              <select>
+                <option value="1">Anglais</option>
+                <option value="2">Espagnol</option>
+                <option value="3">Français</option>
+              </select>
+            </div>
+        </div>
         
     </header>
-    
+
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'/>
+<div class="flip-container">
+  <div class="flipper" id="red">
+    <div class="redbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="redbox box box-back">
+      <p class="center box">Camel</p>
+      <button onclick="speak('Camel');"> 
+        ?
+        <img src="">
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="bluebox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="bluebox box box-back">
+      Donkey
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="whitebox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="whitebox box box-back">
+      Turtle
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="greenbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="greenbox box box-back">
+      Ox
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="mgreenbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="mgreenbox box box-back">
+      Sheep
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="darkredbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="darkredbox box box-back">
+      Squirrel
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="darkredbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="darkredbox box box-back">
+      Walrus
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="darkredbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="darkredbox box box-back">
+      Jackal
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="darkredbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="darkredbox box box-back">
+      Hedgehog
+    </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="darkredbox box box-front">
+      <h1>>> tehBox Front</h1>
+    </div>
+    <div class="darkredbox box box-back">
+      Rabbit
+    </div>
+  </div>
+</div>
+<script>
+
+    var box = document.getElementsByClassName("flipper");
+    for (let i = 0; i < box.length; i++) {
+        const element = box[i];
+        element.addEventListener("click", (e) => {
+            element.classList.toggle("flipperRotate");
+        })
+    }
+
+</script>
+
+<script src="./scripts/speech.js"></script>
+
 </body>
 </html>
