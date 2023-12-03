@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css"/>
+    <title>EcoLingo</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>ECOLINGO</h1>
+        <div class="container">
+          <div class="selectGame">
+            <select id="gameSelect">
+              <option value="recognitionGame">Recognition</option>
+              <option value="learnGame">Learning</option>
+            </select>
+          </div>
+          <div class="selectLang">
+            <select id="languageSelect">
+              <option value="en">Anglais</option>
+              <option value="es">Espagnol</option>
+              <option value="fr">Français</option>
+            </select>
+          </div>
+    </header>
+
+    <button id="btStart" onclick="start();">Start</button>
+
+    <div class="lesbox">
+
+<div class="flip-container" onclick="answer('Dog')">
+  <div class="flipper" id="red">
+    <div class="color3 box box-front">
+      <img src="images/animaux/chien.png" alt="chien"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Cat')">
+  <div class="flipper">
+    <div class="color1 box box-front">
+      <img src="images/animaux/chat.png" alt="chat"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Turtle')">
+  <div class="flipper">
+    <div class="color4 box box-front">
+      <img src="images/animaux/tortue.png" alt="tortue"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Fish')">
+  <div class="flipper">
+    <div class="color5 box box-front">
+      <img src="images/animaux/poisson.png" alt="poisson"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Rabbit')">
+  <div class="flipper">
+    <div class="color1 box box-front">
+      <img src="images/animaux/lapin.png" alt="lapin"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Cow')">
+  <div class="flipper">
+    <div class="color6 box box-front">
+      <img src="images/animaux/vache.png" alt="vache"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Squirrel')">
+  <div class="flipper">
+    <div class="color4 box box-front">
+      <img src="images/animaux/écureuil.png" alt="écureuil"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Monkey')">
+  <div class="flipper">
+    <div class="color2 box box-front">
+      <img src="images/animaux/singe.png" alt="singe"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Bird')">
+  <div class="flipper">
+    <div class="color5 box box-front">
+      <img src="images/animaux/oiseau.png" alt="oiseau"/>
+    </div>
+  </div>
+</div>
+
+<div class="flip-container" onclick="answer('Horse')">
+  <div class="flipper">
+    <div class="color3 box box-front">
+      <img src="images/animaux/cheval.png" alt="cheval"/>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+
+  var listAnimals = ["Dog","Cat","Turtle","Fish","Rabbit","Cow","Squirrel","Monkey","Bird","Horse"];
+  let findAnimal = false;
+  let randAnimal = listAnimals[Math.round(Math.random()*listAnimals.length-1)];
+
+  function getRandomAnimal(){
+    randAnimal = listAnimals[Math.round(Math.random()*listAnimals.length-1)];
+  }
+
+  function start(){
+    if (!findAnimal){
+      speak(randAnimal,'en');
+    }else{
+      getRandomAnimal();
+      speak(randAnimal,'en');
+    }
+    
+  }
+
+  var voices = speechSynthesis.getVoices();
+
+  function speak(text, lang) {
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = text;
+    console.log("message = " + text);
+
+    // Set les attributsyo
+    msg.volume = parseFloat(0.2);
+    msg.rate = parseFloat(1);
+    msg.pitch = parseFloat(0.7);
+
+    // Trouver la voix en fonction de la langue
+    var voices = window.speechSynthesis.getVoices();
+    var selectedVoice = voices.find(function(voice) {
+        return voice.lang.startsWith(lang);
+    });
+
+    if (selectedVoice) {
+        msg.voice = selectedVoice;
+        window.speechSynthesis.speak(msg);
+        console.log("on est sensé entendre quelque chose");
+    } else {
+        console.log("Voix non trouvée pour la langue spécifiée");
+    }
+  }
+
+  function answer(text){
+    if (text==randAnimal){
+      findAnimal = true;
+      speak("Good Answer !", 'en');
+    }else{
+      speak("Bad answer, retry ..", 'en');
+    }
+  }
+
+  document.getElementById("languageSelect").addEventListener("change", function() {
+      var selectedValue = this.value;
+      switch (selectedValue) {
+          case "en":
+              break;
+          case "es":
+              window.location.href = "animaux_reconnaissance_espagnol.html";
+              break;
+          default:
+              // Par défaut, rediriger vers une page par défaut
+              window.location.href = "index.html";
+      }
+  });
+
+  document.getElementById("gameSelect").addEventListener("change", function() {
+    var selectedValue = this.value;
+    switch (selectedValue) {
+        case "learnGame":
+            window.location.href = "animaux_revision_anglais.html";
+            break;
+        case "recognitionGame":
+            break;
+        default:
+            // Par défaut, rediriger vers une page par défaut
+            window.location.href = "index.html";
+    }
+  });
+
+</script>
+
+
+</body>
+</html>

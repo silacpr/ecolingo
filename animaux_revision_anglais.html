@@ -12,14 +12,19 @@
     <header>
         <h1>ECOLINGO</h1>
         <div class="container">
-            <div class="select">
-                <select id="languageSelect">
-                    <option value="en">Anglais</option>
-                    <option value="es">Espagnol</option>
-                    <option value="fr">Français</option>
-                </select>
-            </div>
-        </div>
+          <div class="selectGame">
+            <select id="gameSelect">
+              <option value="learnGame">Learning</option>
+              <option value="recognitionGame">Recognition</option>
+            </select>
+          </div>
+          <div class="selectLang">
+            <select id="languageSelect">
+                <option value="en">Anglais</option>
+                <option value="es">Espagnol</option>
+                <option value="fr">Français</option>
+            </select>
+          </div>
     </header>
 
     <div class="lesbox">
@@ -329,8 +334,7 @@ for (let i = 0; i < box.length; i++) {
             var selectedValue = this.value;
             switch (selectedValue) {
                 case "en":
-                    window.location.href = "animaux_revision_anglais.html";
-                    break;
+                  break;
                 case "es":
                     window.location.href = "animaux_revision_espagnol.html";
                     break;
@@ -338,6 +342,20 @@ for (let i = 0; i < box.length; i++) {
                     // Par défaut, rediriger vers une page par défaut
                     window.location.href = "index.html";
             }
+        });
+
+        document.getElementById("gameSelect").addEventListener("change", function() {
+          var selectedValue = this.value;
+          switch (selectedValue) {
+              case "learnGame":
+                break;
+              case "recognitionGame":
+                  window.location.href = "animaux_reconnaissance_anglais.html";
+                  break;
+              default:
+                  // Par défaut, rediriger vers une page par défaut
+                  window.location.href = "index.html";
+          }
         });
 
     </script>

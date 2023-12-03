@@ -15,8 +15,8 @@
         <div class="container">
           <div class="selectGame">
             <select id="gameSelect">
-              <option value="learnGame">Aprendiendo</option>
               <option value="recognitionGame">Reconocimiento</option>
+              <option value="learnGame">Aprendiendo</option>
             </select>
           </div>
           <div class="selectLang">
@@ -321,6 +321,7 @@ var box = document.getElementsByClassName("flipper");
 for (let i = 0; i < box.length; i++) {
     const element = box[i];
     element.addEventListener("click", (e) => {
+      /*
         // Retirer la classe "flipperRotate" de toutes les tuiles
         for (let j = 0; j < box.length; j++) {
             if (j !== i) {
@@ -329,6 +330,7 @@ for (let i = 0; i < box.length; i++) {
         }
         // Ajouter ou retirer la classe "flipperRotate" de la tuile cliquée
         element.classList.toggle("flipperRotate");
+        */
     });
 }
 
@@ -336,10 +338,10 @@ for (let i = 0; i < box.length; i++) {
             var selectedValue = this.value;
             switch (selectedValue) {
                 case "en":
-                    window.location.href = "animaux_revision_anglais.html";
+                    window.location.href = "animaux_reconnaissance_anglais.html";
                     break;
                 case "es":
-                  break;
+                    break;
                 default:
                     // Par défaut, rediriger vers une page par défaut
                     window.location.href = "index.html";
@@ -350,15 +352,15 @@ for (let i = 0; i < box.length; i++) {
           var selectedValue = this.value;
           switch (selectedValue) {
               case "learnGame":
+                  window.location.href = "animaux_revision_espagnol.html";
                   break;
               case "recognitionGame":
-                  window.location.href = "animaux_reconnaissance_espagnol.html";
                   break;
               default:
                   // Par défaut, rediriger vers une page par défaut
                   window.location.href = "index.html";
           }
-      });
+        });
 
     </script>
 
