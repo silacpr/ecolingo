@@ -11,21 +11,14 @@
 
     <header>
         <h1>ECOLINGO</h1>
-
         <div class="container">
-          <div class="selectGame">
-            <select id="gameSelect">
-              <option value="learnGame">Aprendiendo</option>
-              <option value="recognitionGame">Reconocimiento</option>
-            </select>
-          </div>
-          <div class="selectLang">
-            <select id="languageSelect">
-                <option value="es">Espagnol</option>
-                <option value="en">Anglais</option>
-                <option value="fr">Français</option>
-            </select>
-          </div>
+            <div class="select">
+                <select id="languageSelect">
+                    <option value="es">Espagnol</option>
+                    <option value="en">Anglais</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
         </div>
     </header>
 
@@ -309,7 +302,7 @@
         window.speechSynthesis.speak(msg);
         console.log("on est sensé entendre quelque chose");
     } else {
-        console.log("Voix non trouvée pour la langue spécifiée");
+        alert("Voix non trouvée pour la langue spécifiée");
     }
 
     event.stopPropagation();
@@ -339,26 +332,13 @@ for (let i = 0; i < box.length; i++) {
                     window.location.href = "animaux_revision_anglais.html";
                     break;
                 case "es":
-                  break;
+                    window.location.href = "animaux_revision_espagnol.html";
+                    break;
                 default:
                     // Par défaut, rediriger vers une page par défaut
                     window.location.href = "index.html";
             }
         });
-
-        document.getElementById("gameSelect").addEventListener("change", function() {
-          var selectedValue = this.value;
-          switch (selectedValue) {
-              case "learnGame":
-                  break;
-              case "recognitionGame":
-                  window.location.href = "animaux_reconnaissance_espagnol.html";
-                  break;
-              default:
-                  // Par défaut, rediriger vers une page par défaut
-                  window.location.href = "index.html";
-          }
-      });
 
     </script>
 

@@ -118,10 +118,10 @@
 
   var listAnimals = ["Dog","Cat","Turtle","Fish","Rabbit","Cow","Squirrel","Monkey","Bird","Horse"];
   let findAnimal = false;
-  let randAnimal = listAnimals[Math.round(Math.random()*listAnimals.length-1)];
+  let randAnimal = listAnimals[Math.round(Math.random()*(listAnimals.length-1))];
 
   function getRandomAnimal(){
-    randAnimal = listAnimals[Math.round(Math.random()*listAnimals.length-1)];
+    randAnimal = listAnimals[Math.round(Math.random()*(listAnimals.length-1))];
   }
 
   function start(){
@@ -153,11 +153,11 @@
     });
 
     if (selectedVoice) {
-        msg.voice = selectedVoice;
-        window.speechSynthesis.speak(msg);
-        console.log("on est sensé entendre quelque chose");
+      msg.voice = selectedVoice;
+      window.speechSynthesis.speak(msg);
+      console.log("on est sensé entendre quelque chose");
     } else {
-        console.log("Voix non trouvée pour la langue spécifiée");
+      alert("Voix non trouvée pour la langue spécifiée");
     }
   }
 

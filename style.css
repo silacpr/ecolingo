@@ -121,43 +121,91 @@ header h1 {
 }
 
 select {
-    float: right;
-    appearance: none;
-    box-shadow: none;
-    flex: 1;
-    padding: 0 1em;
-    background-image: none;
-    cursor: pointer;
-    background-color: white;
-    border-radius: 30px;
-    border : 0;
-    font-size: 18px;
-  }
-  /* Remove IE arrow */
-  select::-ms-expand {
-    display: none;
-    border : 0;
-  }
-  /* Custom Select wrapper */
-  .select {
-    position: relative;
-    display: flex;
-    width: 10em;
-    height: 3em;
-    overflow: hidden;
-    border : 0;
-  }
-  .select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1em;
-    transition: .25s all ease;
-    pointer-events: none;
-  }
-  
-  
+  float: right;
+  appearance: none;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  background-image: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 30px;
+  border : 0;
+  font-size: 18px;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+  border : 0;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 3em;
+  overflow: hidden;
+  border : 0;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  transition: .25s all ease;
+  pointer-events: none;
+}
 
+.WelcomDiv {
+  margin: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.WelcomText {
+  width: auto;
+  height: auto;
   
+}
+
+
+.learn_practice{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.learn_practice div {
+
+  height : 60vh;
+  width: 44vw;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.learn{
+  background-color: rgba(255, 166, 0, 0.642);
+  border-radius: 20px;
+}
+
+.learn:hover{
+  background-color: rgb(255, 166, 0);
+}
+  
+.practice{
+  background-color: rgba(87, 182, 87, 0.656);
+  border-radius: 20px;
+}
+
+.practice:hover{
+  background-color: rgb(87, 182, 87);
+}
 

@@ -303,13 +303,12 @@
     });
 
     if (selectedVoice) {
-        msg.voice = selectedVoice;
-        window.speechSynthesis.speak(msg);
-        console.log("on est sensé entendre quelque chose");
+      msg.voice = selectedVoice;
+      window.speechSynthesis.speak(msg);
+      console.log("on est sensé entendre quelque chose");
     } else {
-        console.log("Voix non trouvée pour la langue spécifiée");
+      alert("Voix non trouvée pour la langue spécifiée");
     }
-
     event.stopPropagation();
 }
 
@@ -319,7 +318,6 @@ var box = document.getElementsByClassName("flipper");
 for (let i = 0; i < box.length; i++) {
     const element = box[i];
     element.addEventListener("click", (e) => {
-        // Retirer la classe "flipperRotate" de toutes les tuiles
         for (let j = 0; j < box.length; j++) {
             if (j !== i) {
                 box[j].classList.remove("flipperRotate");
