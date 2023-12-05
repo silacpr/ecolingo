@@ -10,15 +10,9 @@
 <body>
 
     <header>
-        <h1>ECOLINGO</h1>
+        <a href="index.html"><h1>ECOLINGO</h1></a>
         <div class="container">
-          <div class="selectGame">
-            <select id="gameSelect">
-              <option value="learnGame">Learning</option>
-              <option value="recognitionGame">Recognition</option>
-            </select>
-          </div>
-          <div class="selectLang">
+          <div class="select">
             <select id="languageSelect">
                 <option value="en">Anglais</option>
                 <option value="es">Espagnol</option>
@@ -340,20 +334,6 @@ for (let i = 0; i < box.length; i++) {
                     // Par défaut, rediriger vers une page par défaut
                     window.location.href = "index.html";
             }
-        });
-
-        document.getElementById("gameSelect").addEventListener("change", function() {
-          var selectedValue = this.value;
-          switch (selectedValue) {
-              case "learnGame":
-                break;
-              case "recognitionGame":
-                  window.location.href = "animaux_reconnaissance_anglais.html";
-                  break;
-              default:
-                  // Par défaut, rediriger vers une page par défaut
-                  window.location.href = "index.html";
-          }
         });
 
     </script>
