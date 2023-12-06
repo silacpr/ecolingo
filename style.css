@@ -108,6 +108,7 @@ header{
     justify-self: space-between;
     padding : 5px;
     color: white;
+    padding: 0px 40px;
  }
 
 header h1 {
@@ -214,3 +215,20 @@ select::-ms-expand {
   background-color: rgb(87, 182, 87);
 }
 
+.div_son{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.bouton_son{
+  padding : 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(202, 202, 202);
+}
+
+.bouton_son:hover{
+  background-color: rgb(170, 170, 170);
+}
