@@ -285,7 +285,7 @@
     console.log("message = " + text);
 
     // Set les attributsyo
-    msg.volume = parseFloat(0.2);
+    msg.volume = parseFloat(1);
     msg.rate = parseFloat(1);
     msg.pitch = parseFloat(0.7);
 
@@ -298,7 +298,6 @@
     if (selectedVoice) {
       msg.voice = selectedVoice;
       window.speechSynthesis.speak(msg);
-      console.log("on est sensé entendre quelque chose");
     } else {
       alert("Voix non trouvée pour la langue spécifiée");
     }
